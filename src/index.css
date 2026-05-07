@@ -3,13 +3,9 @@
 :root {
   --bg: #f8f7f4;
   --bg2: #f0efe9;
-  --bg3: #e8e6df;
-  --text: #1a1a18;
-  --text2: #4a4a44;
-  --muted: #8a8a82;
   --accent: #e8421a;
-  --white: #ffffff;
-  --border: rgba(26,26,24,0.1);
+  --text: #1a1a18;
+  --muted: #8a8a82;
 }
 
 html { scroll-behavior: smooth; }
@@ -25,7 +21,6 @@ body {
 
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
-
 ::selection { background: #e8421a; color: white; }
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #f8f7f4; }
