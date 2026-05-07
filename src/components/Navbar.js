@@ -56,7 +56,7 @@ export default function Navbar() {
           </div>
         </div>
         <ul className="nav-links">
-          {['services', 'why-us', 'contact'].map(id => (
+          {['services', 'why-us', 'contact', 'Loacation'].map(id => (
             <li key={id}><a onClick={() => scrollTo(id)}>{id === 'why-us' ? 'Why Us' : id.charAt(0).toUpperCase() + id.slice(1)}</a></li>
           ))}
         </ul>
@@ -67,7 +67,7 @@ export default function Navbar() {
       </nav>
 
       <div className={'mobile-menu' + (menuOpen ? '' : ' hidden')}>
-        {['services', 'why-us', 'contact'].map(id => (
+        {['services', 'why-us', 'contact', 'Location'].map(id => (
           <a key={id} onClick={() => scrollTo(id)}>{id === 'why-us' ? 'Why Us' : id.charAt(0).toUpperCase() + id.slice(1)}</a>
         ))}
         <a className="mob-cta" onClick={() => scrollTo('contact')}>Book Repair</a>
