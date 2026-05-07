@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ms-mobile/static/css/main.88ea1755.css",
-    "main.js": "/ms-mobile/static/js/main.9b3e843e.js",
+    "main.js": "/ms-mobile/static/js/main.d129125e.js",
     "static/media/hero-bg.jpeg": "/ms-mobile/static/media/hero-bg.6412b2a7dd7a202bcf52.jpeg",
     "index.html": "/ms-mobile/index.html",
     "main.88ea1755.css.map": "/ms-mobile/static/css/main.88ea1755.css.map",
-    "main.9b3e843e.js.map": "/ms-mobile/static/js/main.9b3e843e.js.map"
+    "main.d129125e.js.map": "/ms-mobile/static/js/main.d129125e.js.map"
   },
   "entrypoints": [
     "static/css/main.88ea1755.css",
-    "static/js/main.9b3e843e.js"
+    "static/js/main.d129125e.js"
   ]
 }
