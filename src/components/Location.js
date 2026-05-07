@@ -56,13 +56,13 @@ export default function Location() {
                   </div>
                 </div>
               ))}
-              
+              <a
                 href="https://maps.google.com/?q=Pottuvil,Sri+Lanka"
                 target="_blank"
                 rel="noreferrer"
-                className="directions-btn"
+                className="directions-btn">
               
-                Get Directions →
+                Get Directions </a>
             </div>
           </div>
         </div>
