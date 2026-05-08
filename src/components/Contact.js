@@ -65,7 +65,7 @@ export default function Contact() {
             <p className="contact-sub">Fill the form and it will be sent straight to our WhatsApp. We reply fast!</p>
 
             {[
-              { icon: '📍', label: 'location', val: 'Pottuvil, Sri Lanka', href: 'https://maps.app.goo.gl/TAMTWhSVRBzQaxHq6' },
+              { icon: '📍', label: 'location', val: 'Pottuvil, Sri Lanka', href: 'https://maps.app.goo.gl/ij5qTxEqysjn98ACA' },
               { icon: '📞', label: 'phone', val: '+94 77 717 4227', href: 'tel:+94777174227' },
               { icon: '✉️', label: 'email', val: 'asasatha9494@gmail.com', href: 'mailto:asasatha9494@gmail.com' },
               { icon: '🕐', label: 'hours', val: 'Every Day: 9am - 9pm', href: null },

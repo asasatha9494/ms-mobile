@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Location() {
   return (
-    <>
-      <style>{`
+    React.createElement(React.Fragment, null,
+      React.createElement('style', null, `
         .location { padding: 6rem 3rem; background: #f0efe9; }
         .location-inner { max-width: 1000px; margin: 0 auto; }
         .location-tag { font-family: 'DM Mono', monospace; font-size: 0.7rem; color: #e8421a; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.75rem; }
@@ -24,49 +24,45 @@ export default function Location() {
           .location-grid { grid-template-columns: 1fr; }
           .map-wrap { height: 250px; }
         }
-      `}</style>
-
-      <section id="location" className="location">
-        <div className="location-inner">
-          <div className="location-tag">// find us</div>
-          <h2>Our Location</h2>
-          <p className="location-sub">Come visit us in Pottuvil — we are open every day from 9am to 9pm.</p>
-
-          <div className="location-grid">
-            <div className="map-wrap">
-              <iframe
-                title="MS Mobile Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123!2d81.833!3d6.929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPottuvil%2C+Sri+Lanka!5e0!3m2!1sen!2slk!4v1234567890"
-                allowFullScreen=""
-                loading="lazy"
-              />
-            </div>
-
-            <div className="location-details">
-              {[
+      `),
+      React.createElement('section', { id: 'location', className: 'location' },
+        React.createElement('div', { className: 'location-inner' },
+          React.createElement('div', { className: 'location-tag' }, '// find us'),
+          React.createElement('h2', null, 'Our Location'),
+          React.createElement('p', { className: 'location-sub' }, 'Come visit us in Pottuvil. We are open every day from 9am to 9pm.'),
+          React.createElement('div', { className: 'location-grid' },
+            React.createElement('div', { className: 'map-wrap' },
+              React.createElement('iframe', {
+                title: 'MS Mobile Location',
+                src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123!2d81.833!3d6.929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPottuvil%2C+Sri+Lanka!5e0!3m2!1sen!2slk!4v1234567890',
+                allowFullScreen: '',
+                loading: 'lazy'
+              })
+            ),
+            React.createElement('div', { className: 'location-details' },
+              [
                 { icon: '📍', label: 'address', val: 'Pottuvil, Sri Lanka' },
-                { icon: '🕐', label: 'hours', val: 'Every Day: 9am – 9pm' },
+                { icon: '🕐', label: 'hours', val: 'Every Day: 9am - 9pm' },
                 { icon: '📞', label: 'phone', val: '+94 77 717 4227' },
-              ].map(({ icon, label, val }) => (
-                <div key={label} className="loc-card">
-                  <div className="loc-icon">{icon}</div>
-                  <div>
-                    <span className="loc-label">{label}</span>
-                    <span className="loc-val">{val}</span>
-                  </div>
-                </div>
-              ))}
-              <a
-                href="https://maps.google.com/?q=Pottuvil,Sri+Lanka"
-                target="_blank"
-                rel="noreferrer"
-                className="directions-btn">
-              
-                Get Directions </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+              ].map(({ icon, label, val }) =>
+                React.createElement('div', { key: label, className: 'loc-card' },
+                  React.createElement('div', { className: 'loc-icon' }, icon),
+                  React.createElement('div', null,
+                    React.createElement('span', { className: 'loc-label' }, label),
+                    React.createElement('span', { className: 'loc-val' }, val)
+                  )
+                )
+              ),
+              React.createElement('a', {
+                href: 'https://maps.app.goo.gl/ij5qTxEqysjn98ACA',
+                target: '_blank',
+                rel: 'noreferrer',
+                className: 'directions-btn'
+              }, 'Get Directions')
+            )
+          )
+        )
+      )
+    )
   );
 }
