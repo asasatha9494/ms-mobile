@@ -11,7 +11,10 @@ export default function Navbar() {
   }, []);
 
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    console.log('scrolling to:', id);
+    const el = document.getElementById(id);
+    console.log('element found:', el);
+    el?.scrollIntoView({ behavior: 'smooth' });
     setMenuOpen(false);
   };
 
@@ -56,7 +59,7 @@ export default function Navbar() {
           </div>
         </div>
         <ul className="nav-links">
-          {['services', 'why-us', 'contact', 'Loacation'].map(id => (
+          {['services', 'why-us', 'contact', 'location'].map(id => (
             <li key={id}><a onClick={() => scrollTo(id)}>{id === 'why-us' ? 'Why Us' : id.charAt(0).toUpperCase() + id.slice(1)}</a></li>
           ))}
         </ul>
@@ -67,7 +70,7 @@ export default function Navbar() {
       </nav>
 
       <div className={'mobile-menu' + (menuOpen ? '' : ' hidden')}>
-        {['services', 'why-us', 'contact', 'Location'].map(id => (
+        {['services', 'why-us', 'contact', 'location'].map(id => (
           <a key={id} onClick={() => scrollTo(id)}>{id === 'why-us' ? 'Why Us' : id.charAt(0).toUpperCase() + id.slice(1)}</a>
         ))}
         <a className="mob-cta" onClick={() => scrollTo('contact')}>Book Repair</a>

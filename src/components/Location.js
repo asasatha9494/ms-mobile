@@ -34,7 +34,7 @@ export default function Location() {
             React.createElement('div', { className: 'map-wrap' },
               React.createElement('iframe', {
                 title: 'MS Mobile Location',
-                src: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123!2d81.833!3d6.929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sPottuvil%2C+Sri+Lanka!5e0!3m2!1sen!2slk!4v1234567890',
+                src: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7922.326578558657!2d81.831887!3d6.871029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae5a344f568b95d%3A0x865da14d171e7e5c!2sMs-mobile!5e0!3m2!1sen!2slk!4v1778214882988!5m2!1sen!2slk',
                 allowFullScreen: '',
                 loading: 'lazy'
               })
@@ -54,7 +54,7 @@ export default function Location() {
                 )
               ),
               React.createElement('a', {
-                href: 'https://maps.app.goo.gl/ij5qTxEqysjn98ACA',
+                href: 'https://maps.app.goo.gl/JHGBK7PoAQU7aQDZ7',
                 target: '_blank',
                 rel: 'noreferrer',
                 className: 'directions-btn'
